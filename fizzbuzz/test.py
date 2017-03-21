@@ -7,21 +7,22 @@ from fizzbuzz_module import fizzbuzz
 
 class FizzBuzzAcceptanceTestCase(unittest.TestCase):
     '''
-    Test that fizzbuzz(int) returns int
+    Test that fizzbuzz(int) returns str(int)
     unless multiple of 3 (then returns 'Fizz')
            multiple of 5 (then returns 'Buzz')
            multiple of both (then returns 'FizzBuzz')
     '''
+
     def test_normal_numbers(self):
         '''
         test that an integer >= 0 not evenly divisible
         by three or five returns the same
         '''
-        self.assertEqual(fizzbuzz(1), 1)
-        self.assertEqual(fizzbuzz(2), 2)
-        self.assertEqual(fizzbuzz(4), 4)
-        self.assertEqual(fizzbuzz(7), 7)
-        self.assertEqual(fizzbuzz(998), 998)
+        self.assertEqual(fizzbuzz(1), '1')
+        self.assertEqual(fizzbuzz(2), '2')
+        self.assertEqual(fizzbuzz(4), '4')
+        self.assertEqual(fizzbuzz(7), '7')
+        self.assertEqual(fizzbuzz(998), '998')
 
     def test_fizz(self):
         '''evenly divisible by 3 returns Fizz'''
