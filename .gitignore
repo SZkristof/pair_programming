@@ -5,3 +5,20 @@ __pycache__/
 
 # OS-X
 .DS_Store
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### PyCharm ###
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
